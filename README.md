@@ -22,6 +22,12 @@ A SMS system for purchasing vip privileges for Counter-Strike 1.6 servers.
 3. Configure the `Config.php` file located in `App/Config`.
 4. In the terminal, type: `composer install` to install the required dependencies.
 
+### Demo
+https://i.imgur.com/RlvWByT.png
+https://i.imgur.com/TqR0Mrg.png
+https://i.imgur.com/YPMmvhM.png
+https://i.imgur.com/0C4i9ks.png
+
 ### Basics ✓
 - [x] Auth
     - [x] Login Page
@@ -58,10 +64,3 @@ A SMS system for purchasing vip privileges for Counter-Strike 1.6 servers.
 ### Advertising
 - [x] Special page for purchasing ad
     - [x] An extension to display purchased ads in the forum
-
-### Database names
-- [x] Users
-- [x] sms_data
-- [x] prices_data
-- [x] banners
-- [x] transactions
