@@ -3,10 +3,8 @@ A SMS system for purchasing vip privileges for Counter-Strike 1.6 servers.
 
 ### Back-end Features:
 - FastRoute
-- PSR Http Message
 - PDO
 - SSL Ready
-- CSRF Token
 - MVC Structure
 
 ### Front-End Features:
