@@ -16,6 +16,11 @@ A SMS system for purchasing vip privileges for Counter-Strike 1.6 servers.
 - CSS 2/3 (strict)
 - JQuery
 
+### Installation
+1. Upload the system to the "`paytmans`" folder (The system is designed to be in a subfolder).
+2. Insert the SQL script, which should be the same as the one used for phpbb and amxbans/csbans.
+3. Configure the `Config.php` file located in `App/Config`.
+4. In the terminal, type: `composer install` to install the required dependencies.
 
 ### Basics ✓
 - [x] Auth
