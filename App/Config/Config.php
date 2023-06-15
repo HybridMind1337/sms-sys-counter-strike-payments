@@ -1,14 +1,4 @@
 <?php
-/**
- * @class ${FILE}
- * @created 01/04/2023 г.
- *
- * @author HybridMind
- * @email hybridmind1337@gmail.com
- * @discord HybridMind#6095
- *
- */
-
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -19,7 +9,7 @@ error_reporting(E_ALL);
 const SERVER_HOST = 'localhost';
 const DB_NAME = 'amxx';
 const DB_USERNAME = 'amxx';
-const DB_PASSWORD = 'ch8JQP1]EcUXqJ3]';
+const DB_PASSWORD = 'amxx';
 
 /**
  * SYSTEM CONST
