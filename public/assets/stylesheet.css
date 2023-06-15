@@ -1,0 +1,131 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #868686;
+    line-height: 1.7em;
+    padding: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: #2c2d2d url('../assets/img/bg.png') no-repeat fixed center top;
+    height: 100%;
+}
+/*
+body {
+    background-color: #fbfbfb;
+} */
+
+a {
+    text-decoration: none;
+    color: #005f9f;
+    transition: all 350ms ease-in-out;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #f8f9fa !important;
+    transition: all 350ms ease-in-out;
+}
+
+.ultra-big-white {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 6px;
+    font-weight: 700;
+    color: #fff;
+    padding: 10px;
+    line-height: 72px;
+    border: solid 6px rgba(255, 255, 255, .1);
+    margin: 5rem;
+    text-align: center;
+    text-shadow: 1px 0 1px black;
+}
+
+@media only screen and (max-width: 768px) {
+    .ultra-big-white {
+        font-size: 2rem;
+        letter-spacing: 4px;
+        padding: 5px;
+        line-height: 48px;
+        border: solid 3px rgba(255, 255, 255, .1);
+        margin: 2rem;
+        text-shadow: 0.5px 0 0.5px black;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .ultra-big-white {
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+        padding: 5px;
+        line-height: 36px;
+        border: solid 2px rgba(255, 255, 255, .1);
+        margin: 1rem;
+        text-shadow: 0.5px 0 0.5px black;
+    }
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+
+.bg-purple {
+    background-color: #2b2edb;
+}
+
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0; /* Height of navbar */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 240px;
+    z-index: 600;
+}
+
+@media (max-width: 991.98px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+.sidebar .active {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@media (min-width: 991.98px) {
+    main {
+        padding-left: 240px;
+    }
+}
+
+
+.card-header {
+    background-color: #1a1a1a;
+}
+
+.card {
+    border-radius: 10px;
+}

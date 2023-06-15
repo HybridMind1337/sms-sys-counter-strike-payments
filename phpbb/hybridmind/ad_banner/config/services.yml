@@ -1,0 +1,12 @@
+services:
+  hybridmind.ad_banner.listener:
+    class: hybridmind\ad_banner\event\main_listener
+    arguments:
+      - '@config'
+      - '@template'
+      - '@user'
+      - '@dbal.conn'
+      - '@language'
+    tags:
+      - { name: event.listener }
+

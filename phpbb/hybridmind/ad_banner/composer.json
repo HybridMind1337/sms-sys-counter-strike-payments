@@ -1,0 +1,27 @@
+{
+    "name": "hybridmind/ad_banner",
+    "type": "phpbb-extension",
+    "description": "Banner ad displayed in the forum",
+    "homepage": "",
+    "version": "1.0.0",
+    "time": "2023-04-15",
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "HybridMind",
+            "email": "support@webocean.info",
+            "homepage": "https://webocean.info",
+            "role": ""
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "display-name": "AD Banner",
+        "soft-require": {
+            "phpbb/phpbb": ">=3.2.0,<3.4.0@dev"
+        }
+    }
+}
