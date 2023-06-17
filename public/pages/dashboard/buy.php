@@ -15,21 +15,32 @@
         <div class="card">
             <div class="card-header">Закупуване на флагове</div>
             <div class="card-body">
-                <div class="alert alert-info" role="alert" data-mdb-color="success">
-                    <h4 class="alert-heading">Информация за продукта</h4>
-                    <p>
-                        Следните флагове ще бъдат добавени към посоченият от вас nickname.<br />
-                        <b><?php echo $flag->flags; ?></b><br />
-                        Флаговете ще бъдат добавени към следният сървър:<br />
-                        <b><?php echo $flag->server_id; ?></b><br />
-                        Време траеното на флаговете ще бъде <b><?php echo $flag->valid; ?></b> дни. Тоест ако закупите флаговете днес, ще трябва да закупите флаговете отново на <b><?php echo futureDate($flag->valid); ?></b>
-                    </p>
-                    <hr/>
-                    <p class="mb-0">
-                        Премахването на бана ще Ви струва <b><?php echo UNBAN_PRICE; ?></b> кредита.
-                    </p>
-                </div>
-
+                <table class="table table-hover table-striped">
+                    <thead>
+                    <tr>
+                        <th colspan="2" class="alert-heading">Информация за продукта</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Следните флагове ще бъдат добавени към посоченият от вас nickname.</td>
+                        <td><b><?php echo $flag->flags ?></b></td>
+                    </tr>
+                    <tr>
+                        <td>Флаговете ще бъдат добавени към следният сървър:</td>
+                        <td><b><?php echo $server_info->hostname ?></b></td>
+                    </tr>
+                    <tr>
+                        <td>Времето, през което флаговете ще бъдат активни, ще бъде</td>
+                        <td><b><?php echo $flag->valid ?></b> дни.</td>
+                    </tr>
+                    <tr>
+                        <td>Това означава, че ако закупите флаговете днес, ще трябва да ги закупите отново на</td>
+                        <td><b><?php echo futureDate($flag->valid) ?></b></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <hr />
                 <form method="POST">
 
                     <div class="form-floating mb-3">
