@@ -32,15 +32,20 @@ class Flags extends Kernal
     /**
      * @param $id
      */
-    public function buy($id)
+        public function buy(int $id)
     {
         Auth();
-        $flags = $this->db->getWhere('flags_data', ['id', '=', htmlspecialchars($id)])->getFirst();
-        if (!$flags) {
+        $secured_id = htmlspecialchars($id);
+        $flags = $this->db->getWhere('flags_data', ['id', '=', $secured_id])->getFirst();
+        $server_info = $this->db->getWhere('amx_serverinfo', ['id', '=', $secured_id])->getFirst();
+
+        if (!$flags || !$server_info) {
             redirect(getRequestPage(), 'Няма намерена информация');
         }
+
         $this->renderView('dashboard/buy', [
-            'flag' => $flags
+            'flag' => $flags,
+            'server_info' => $server_info
         ]);
     }
 
